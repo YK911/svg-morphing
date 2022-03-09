@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Morphing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="relative w-auto h-auto text-white">
+    <button
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-2 px-10 border-2 rounded-full border-white"
+      id="cta"
+    >
+      Click me!
+    </button>
+    <div class="w-3/5 absolute top-0 left-1/4 -translate-x-1/2 -translate-y-1/2 text-blue-600 opacity-0" id="blip">
+      <h1 class="text-2xl mb-2">Lorem ipsum dolor sit amet.</h1>
+      <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta a autem quibusdam.</p>
+      <button class="py-2 px-10 text-white bg-blue-600 rounded-full" id="cta2">Go back</button>
+    </div>
+    <svg class="fill-blue-600" viewbox="0 0 215 110">
+      <polygon class="polymorph" points="215,110 0,110 0,0 47.7,0 215,0" />
+    </svg>
+
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
