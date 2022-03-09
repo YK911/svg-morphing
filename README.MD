@@ -1,4 +1,4 @@
-SVG morphing using [anime.js](https://animejs.com/)
+SVG morphing using [anime.js](https://animejs.com/) library
 
 
 
